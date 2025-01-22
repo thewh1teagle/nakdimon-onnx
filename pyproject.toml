@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.urls]
-home = "https://github.com/thewh1teagle/nakdimon-ort"
+home = "https://github.com/thewh1teagle/nakdimon-onnx"
 
 [build-system]
 requires = ["hatchling"]

@@ -25,5 +25,5 @@ jobs:
 
       - name: Run tests
         run: |
-          wget https://github.com/thewh1teagle/nakdimon-ort/releases/download/v0.1.0/nakdimon.onnx
+          wget https://github.com/thewh1teagle/nakdimon-onnx/releases/download/v0.1.0/nakdimon.onnx
           uv run pytest -s .

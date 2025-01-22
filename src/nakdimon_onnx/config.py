@@ -25,14 +25,14 @@ class Config:
             f"Model file not found: {model_path}\n"
             "Please download the Nakdimon model before executing.\n"
             "You can download it using the following command:\n"
-            "wget https://github.com/thewh1teagle/nakdimon-ort/releases/download/v0.1.0/nakdimon.onnx"
+            "wget https://github.com/thewh1teagle/nakdimon-onnx/releases/download/v0.1.0/nakdimon.onnx"
         )
 
         assert config_path and Path(config_path).exists(), (
             f"Configuration file not found: {config_path}\n"
             "Please download the Nakdimon configuration file before executing.\n"
             "You can download it using the following command:\n"
-            "wget https://github.com/thewh1teagle/nakdimon-ort/raw/main/nakdimon-onnx/config.json"
+            "wget https://github.com/thewh1teagle/nakdimon-onnx/raw/main/nakdimon-onnx/config.json"
         )
 
         with open(config_path, "r", encoding="utf-8") as f:
