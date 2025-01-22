@@ -5,7 +5,7 @@ wget https://github.com/thewh1teagle/nakdimon-ort/releases/download/v0.1.0/nakdi
 python usage.py input.txt output.txt
 """
 
-from nakdimon_ort import Nakdimon
+from nakdimon_onnx import Nakdimon
 import sys
 
 input = sys.argv[1]

@@ -1,6 +1,12 @@
-venv/
+# Python-generated files
 __pycache__/
+*.py[oc]
 build/
+dist/
+wheels/
+*.egg-info
+
+# General
 *.onnx
 *.keras
 *.h5
@@ -10,3 +16,6 @@ dist/
 examples/*.txt
 examples/config.json
 target/
+
+# Virtual environments
+.venv
