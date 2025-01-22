@@ -7,7 +7,7 @@ See https://www.nakdimon.org/
 
 import pytest
 from pathlib import Path
-from nakdimon_ort import Nakdimon
+from nakdimon_onnx import Nakdimon
 import difflib
 
 

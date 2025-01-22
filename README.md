@@ -1,14 +1,14 @@
-# nakdimon-ort
+# nakdimon-onnx
 
 [`nakdimon`](https://github.com/elazarg/nakdimon) diacritizer with onnxruntime
 
 ## Setup
 
 ```console
-pip install nakdimon-ort
+pip install nakdimon-onnx
 ```
 
-You also need [`nakdimon.onnx`](https://github.com/thewh1teagle/nakdimon-ort/releases/download/v0.1.0/nakdimon.onnx). Please see [examples](examples).
+You also need [`nakdimon.onnx`](https://github.com/thewh1teagle/nakdimon-onnx/releases/download/v0.1.0/nakdimon.onnx). Please see [examples](examples).
 
 ## Examples
 

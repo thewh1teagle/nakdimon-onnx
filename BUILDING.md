@@ -3,8 +3,7 @@
 ## Build
 
 ```console
-python -m pip install -U build
-python -m build
+uv build
 ```
 
 ## Publish
@@ -12,23 +11,20 @@ python -m build
 _Get token from https://pypi.org/manage/account/token/ _
 
 ```console
-python -m pip install -U twine
-
-python -m build
-python -m twine upload dist/*
+uv build
+UV_PUBLISH_TOKEN="your pypi token" uv publish
 ```
-
-_Add `--repository testpypi` to upload to test repository_
 
 ## Test
 
 ```console
-pip install '.[dev]'
-pytest -s .
+uv run pytest -s .
 ```
 
 ## Debugging
 
 Use [delta](https://github.com/dandavison/delta)
 
+```console
 delta input.txt output.txt
+```
