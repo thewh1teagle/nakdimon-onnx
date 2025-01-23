@@ -1,18 +1,21 @@
-# pip3 install tensorflow==2.15.0 tf2onnx onnx
-# wget https://github.com/elazarg/nakdimon/raw/refs/heads/master/nakdimon/Nakdimon.h5
-# python main.py Nakdimon.h5
-# Note: model requires special load function so I converted it using nakdimon own functions to load it.
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "nakdimon==0.1.2",
+#     "onnx==1.17.0",
+#     "tf2onnx==1.16.0",
+# ]
+# ///
 
-import tensorflow as tf
+"""
+wget https://github.com/elazarg/nakdimon/raw/refs/heads/master/nakdimon/Nakdimon.h5
+uv run scripts/export.py
+"""
+
+from nakdimon.predict import load_cached_model
 import tf2onnx
 import onnx
-from tensorflow import keras
-from keras.models import load_model
-import sys
 
-path = sys.argv[1]
-model = load_model(path)
-
-print("model loaded")
-onnx_model, _ = tf2onnx.convert.from_keras(model, ustom_objects={"loss": None})
+model = load_cached_model("Nakdimon.h5")
+onnx_model, _ = tf2onnx.convert.from_keras(model)
 onnx.save(onnx_model, "nakdimon.onnx")
