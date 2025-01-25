@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+
 class Config:
     def __init__(self, model_path, config_path: str) -> None:
         config = self.load(model_path, config_path)
@@ -19,7 +20,7 @@ class Config:
         self.all_tokens: list = [""] + self.special + self.valid
         self.remove_niqqud_range: list = config["remove_niqqud_range"]
         self.max_len: int = config["max_len"]
-        
+
     def load(self, model_path, config_path):
         assert model_path and Path(model_path).exists(), (
             f"Model file not found: {model_path}\n"
