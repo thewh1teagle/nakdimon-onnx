@@ -1,6 +1,6 @@
 # nakdimon-onnx
 
-[`nakdimon`](https://github.com/elazarg/nakdimon) diacritizer with onnxruntime
+[`nakdimon`](https://github.com/elazarg/nakdimon) Hebrew diacritizer with onnxruntime
 
 ## Setup
 
